@@ -1,0 +1,43 @@
+/* stil.css */
+body {
+    background-image: url("bilder/bits.svg");
+}
+
+header {
+    font-size: xx-large;
+}
+
+nav, footer {
+    background-color: lightblue;
+}
+
+main {
+    border-style: dotted;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+aside {
+    background-color: lightpink;
+}
+
+.logo img {
+    height: 1em;
+}
+
+.galleri img {
+    height: 200px;
+}
+
+.galleri a:hover img {
+    background-color: yellow;
+}
+
+.selektorer {
+    background-color: lightpink;
+}
+
+li:nth-child(odd) {
+    background-color: lightgrey;
+}

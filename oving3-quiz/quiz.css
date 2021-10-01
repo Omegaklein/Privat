@@ -1,0 +1,40 @@
+body {
+  counter-reset: section;
+}
+
+.quiztittel {
+  margin-left: 1%;
+}
+
+.quizingress {
+  font-style: italic;
+  margin-left: 1%;
+}
+
+.spørsmål {
+  border-style: solid;
+  box-shadow: 1px 1px 8px;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.spørsmål:nth-child(odd) {
+  background-color: #ffe2b5;
+}
+
+.spørsmålstekst {
+  font-size: x-large;
+  border-bottom: 3px dashed;
+}
+
+.spørsmålstekst::before {
+  counter-increment: section;
+  content: "Spørsmål " counter(section) ": ";
+}
+
+.korrekt {
+  border-style: solid;
+  border-color: green;
+  margin-right: 1%;
+}
